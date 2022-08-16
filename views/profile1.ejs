@@ -1,0 +1,55 @@
+<%- include("partials/header") -%>
+<body>
+    <div class="homepage">
+        <div class="profile_page">
+            <nav>
+                <h2 class="logo">SLAMBOOK</h2>
+                <div class="search">
+                    <form class="form-inline" method="POST" action="/search">
+                          <input type="text" name="user_query" class="form-control" placeholder="Find Users By Username...">
+                          <button type="submit">Search</button>
+                    </form>
+                </div>
+                <ul>
+                    <a href="/profile" role="button">Edit profile</a>
+                </ul>
+                <a class="logout" href="/login" role="button">Logout</a>
+            </nav>
+        </div>
+        <div class="profile">
+            <div class="up">
+                <div class="image">
+                    <h3>{{name}}</h3>
+                    <P>MECH DEPARTMENT</P>
+                    <div class="DOB">
+                        <form  method="post">
+                            <label for="DOB">DOB</label>
+                            <input type="number" name="DOB" id="">
+                        
+                        </form>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="about_me">
+                <div class="hostels">
+                    <div><form action="" method="post">
+                        <label for="h_s">Hostel Stayed</label>
+                        <input type="text" name="Hostels_Stayed" id="">
+                    </form></div>
+                    <div class="aboutme">
+                        <form action="" method="post">
+                            <label for="aboutme">ABOUT ME</label>
+                            <input type="text" name="about_me" id="">
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<%- include("partials/footer") -%>

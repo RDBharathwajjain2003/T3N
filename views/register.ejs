@@ -1,0 +1,14 @@
+<%- include("partials/header") -%>
+<body class="login_page">
+    <div class="l_form">
+        <h1 class="login">Register</h1>
+        <form action="/register" method="post">
+            
+            <input type="email" name="username" placeholder="email" autocomplete="off" class="email" required>
+            <input type="password" name="password" placeholder="password" autocomplete="off" class="password" required>
+            <button class="submit-btn">register</button>
+        </form>
+        
+        <a href="/login" role="button" class="link">already have an account? log in here</a>
+    </div>
+<%- include("partials/footer") -%>

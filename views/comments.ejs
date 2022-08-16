@@ -1,0 +1,46 @@
+<%- include('partials/header') %>
+<body>
+  <div class="homepage">
+      <nav>
+          <h2 class="logo">SLAMBOOK</h2>
+          <div class="search">
+              <form action="#">
+                  <input type="text"
+                  placeholder=" Search for other profile"
+                  name="search" autocomplete="off" data-search>
+                  <button>Search</button>
+              </form>
+          </div>
+          <ul>
+              <a href="/userprofile">userprofile</a>
+          </ul>
+          <a class="logout" href="/login" role="button">Logout</a>
+      </nav>
+  </div>
+  <div class="user-cards" data-user-cards-container></div>
+  <template data-user-template>
+    <div class="card">
+      <div class="header"></div>
+      <div class="body"></div>
+    </div>
+  </template>
+  <h1>Write rem about</h1>
+  <h3>1. About</h3>
+  <br>
+  <form action="" method="get">
+      <textarea name="about" id="" cols="150" rows="7">Write about</textarea>
+  </form>
+  <br>
+  <h3>2. The first thing that strikes you</h3>
+  <br>
+  <form action="" method="get">
+      <textarea name="first_thing" id="" cols="150" rows="7"></textarea>
+  </form>
+  <br>
+  <h3>Nicknames</h3>
+  <br>
+  <form action="" method="get">
+      <textarea name="nickname" id="" cols="150" rows="7"></textarea>
+  </form>
+  <script src="../app1.js"></script>
+<%- include('partials/footer') %>
